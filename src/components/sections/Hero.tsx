@@ -24,7 +24,7 @@ export function Hero() {
       
       {/* Animated Glowing Orb / Shape */}
       <motion.div
-        className="absolute w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-red-500/10 rounded-full blur-[100px] z-0"
+        className="absolute w-[150vw] h-[150vw] md:w-[60vw] md:h-[60vw] max-w-[800px] max-h-[800px] bg-red-500/20 md:bg-red-500/10 rounded-full blur-[80px] md:blur-[100px] z-0"
         style={{ y: backgroundY }}
         animate={{
           scale: [1, 1.1, 1],
