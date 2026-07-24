@@ -20,14 +20,14 @@ export function About() {
         style={{ y, opacity }}
       >
         <div className="space-y-4">
-          <h2 className="text-sm uppercase tracking-[0.3em] text-zinc-500">The Philosophy</h2>
+          <h2 className="text-sm uppercase tracking-[0.3em] text-indigo-400 font-semibold">The Philosophy</h2>
           <p className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight">
             Software should be secure,<br className="hidden md:block" />
-            <span className="text-zinc-600">scalable, and heavily optimized.</span>
+            <span className="text-slate-500">scalable, and heavily optimized.</span>
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 text-zinc-400 text-lg md:text-xl font-light leading-relaxed">
+        <div className="grid md:grid-cols-2 gap-12 text-slate-300 text-lg md:text-xl font-light leading-relaxed">
           <p>
             I architect enterprise-level solutions with a strict focus on data security using JWT and JWE, ensuring that sensitive information remains protected across all communication workflows.
           </p>

@@ -22,15 +22,31 @@ export function Hero() {
         style={{ y: backgroundY }}
       />
       
-      {/* Animated Glowing Orb / Shape */}
+      {/* Double Glowing Tech Orbs (Recruiter Catching Visuals) */}
       <motion.div
-        className="absolute w-[150vw] h-[150vw] md:w-[60vw] md:h-[60vw] max-w-[800px] max-h-[800px] bg-red-500/20 md:bg-red-500/10 rounded-full blur-[80px] md:blur-[100px] z-0"
+        className="absolute w-[120vw] h-[120vw] md:w-[50vw] md:h-[50vw] max-w-[600px] max-h-[600px] bg-indigo-500/10 rounded-full blur-[110px] z-0 top-[15%] left-[10%]"
         style={{ y: backgroundY }}
         animate={{
-          scale: [1, 1.1, 1],
+          scale: [1, 1.15, 1],
+          x: [0, 30, 0],
+          y: [0, -30, 0]
         }}
         transition={{
-          duration: 8,
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className="absolute w-[120vw] h-[120vw] md:w-[50vw] md:h-[50vw] max-w-[600px] max-h-[600px] bg-sky-500/10 rounded-full blur-[110px] z-0 bottom-[15%] right-[10%]"
+        style={{ y: backgroundY }}
+        animate={{
+          scale: [1.1, 1, 1.1],
+          x: [0, -30, 0],
+          y: [0, 30, 0]
+        }}
+        transition={{
+          duration: 12,
           repeat: Infinity,
           ease: "easeInOut",
         }}
@@ -42,54 +58,57 @@ export function Hero() {
       >
         {/* Subtitle Badge */}
         <motion.div
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-zinc-900/40 backdrop-blur-md mb-2 cursor-default"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/20 bg-indigo-950/20 backdrop-blur-md mb-2 cursor-default"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-          <span className="text-xs font-semibold tracking-[0.2em] text-zinc-300 uppercase">
-            Project Engineer @ C-DAC
+          <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse shadow-[0_0_10px_rgba(99,102,241,0.8)]" />
+          <span className="text-xs font-semibold tracking-[0.2em] text-indigo-300 uppercase">
+            Project Engineer @ C-DAC Noida
           </span>
         </motion.div>
 
         <motion.h1 
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter"
+          className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-none"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
           Engineering <br />
-          <span className="text-zinc-500">Robust Systems</span>
+          <span className="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
+            Robust Systems
+          </span>
         </motion.h1>
         
         <motion.p
-          className="text-base md:text-lg text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed"
+          className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
         >
-          Hi, I am Kumar Dhawale. I design, secure, and optimize enterprise-scale web applications. Specializing in Java, Spring Boot, and database performance tuning, with a focus on compliant architecture and Safe-to-Host (STH) security audits.
+          Hi, I am Kumar Dhawale. I design, secure, and optimize enterprise web systems. Specializing in Java, Spring Boot, and PostgreSQL database performance, with proven experience delivering audited, Safe-to-Host (STH) solutions at national scale.
         </motion.p>
 
-        {/* Call to action buttons */}
+        {/* Recruiter-centric Call to action buttons */}
         <motion.div 
-          className="flex flex-row items-center justify-center gap-4 pt-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 w-full max-w-md mx-auto"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
           <a 
             href="#projects" 
-            className="px-6 py-3.5 bg-white text-black font-semibold text-sm rounded-full hover:bg-zinc-200 transition-all duration-300 shadow-md shadow-white/5 active:scale-95"
+            className="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-indigo-500 to-sky-500 text-white font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-indigo-500/20 transition-all duration-300 active:scale-95 text-center"
           >
-            Selected Projects
+            Explore Projects
           </a>
           <a 
-            href="#contact" 
-            className="px-6 py-3.5 border border-zinc-800 text-white font-medium text-sm rounded-full hover:bg-white/5 transition-all duration-300 active:scale-95"
+            href="/Kumar_Dhawale_8208910466.pdf" 
+            download="Kumar_Dhawale_Resume.pdf"
+            className="w-full sm:w-auto px-8 py-3.5 border border-slate-700 bg-slate-900/40 text-slate-200 font-medium text-sm rounded-full hover:bg-slate-800/60 hover:text-white transition-all duration-300 active:scale-95 text-center flex items-center justify-center gap-2"
           >
-            Get In Touch
+            Get Resume / CV
           </a>
         </motion.div>
       </motion.div>

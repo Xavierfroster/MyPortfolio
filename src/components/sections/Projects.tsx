@@ -139,11 +139,11 @@ export function Projects() {
       <div className="relative md:sticky md:top-0 h-auto md:h-screen flex flex-col md:flex-row md:items-center overflow-visible md:overflow-hidden py-20 md:py-0">
         
         {/* Left side overlay mask to hide scrolling cards behind the title (Desktop only) */}
-        <div className="hidden md:block absolute left-0 top-0 bottom-0 w-[35vw] bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent z-20 pointer-events-none" />
+        <div className="hidden md:block absolute left-0 top-0 bottom-0 w-[35vw] bg-gradient-to-r from-[#080c14] via-[#080c14]/85 to-transparent z-20 pointer-events-none" />
 
         {/* Section Title */}
         <div className="relative md:absolute left-6 md:left-24 top-0 md:top-24 mb-12 md:mb-0 px-6 md:px-0 space-y-2 max-w-xs z-30">
-          <h2 className="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold">Selected Architecture</h2>
+          <h2 className="text-xs uppercase tracking-[0.3em] text-indigo-400 font-semibold">Selected Architecture</h2>
           <p className="text-2xl md:text-3xl font-bold tracking-tight text-white leading-tight">
             Enterprise Applications & Tools
           </p>
@@ -181,16 +181,16 @@ export function Projects() {
                 
                 <div className="space-y-4">
                   <div>
-                    <span className="block text-[10px] text-zinc-500 uppercase tracking-widest font-semibold mb-1">Challenge</span>
-                    <p className="text-sm md:text-base text-zinc-400 font-light leading-relaxed">{project.problem}</p>
+                    <span className="block text-[10px] text-indigo-400 uppercase tracking-widest font-semibold mb-1">Challenge</span>
+                    <p className="text-sm md:text-base text-slate-400 font-light leading-relaxed">{project.problem}</p>
                   </div>
                   <div>
-                    <span className="block text-[10px] text-zinc-500 uppercase tracking-widest font-semibold mb-1">Execution</span>
-                    <p className="text-sm md:text-base text-zinc-300 font-light leading-relaxed">{project.solution}</p>
+                    <span className="block text-[10px] text-indigo-400 uppercase tracking-widest font-semibold mb-1">Execution</span>
+                    <p className="text-sm md:text-base text-slate-300 font-light leading-relaxed">{project.solution}</p>
                   </div>
                   <div>
-                    <span className="block text-[10px] text-zinc-500 uppercase tracking-widest font-semibold mb-1">Technology Deck</span>
-                    <p className="text-zinc-500 font-mono text-[11px] bg-white/5 px-3 py-1.5 rounded-lg border border-white/5 inline-block mt-1">
+                    <span className="block text-[10px] text-indigo-400 uppercase tracking-widest font-semibold mb-1">Technology Deck</span>
+                    <p className="text-slate-400 font-mono text-[11px] bg-white/5 px-3 py-1.5 rounded-lg border border-white/5 inline-block mt-1">
                       {project.stack}
                     </p>
                   </div>
@@ -199,7 +199,7 @@ export function Projects() {
 
               {/* Visual Mockup Card */}
               <div className="lg:col-span-5 w-full">
-                <div className="p-1 rounded-2xl border border-white/5 bg-zinc-900/20 backdrop-blur-md shadow-xl relative overflow-hidden group">
+                <div className="p-1 rounded-2xl border border-white/5 bg-slate-900/20 backdrop-blur-md shadow-xl relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="relative z-10">
                     {project.visual}

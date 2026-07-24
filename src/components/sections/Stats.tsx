@@ -60,23 +60,23 @@ export function Stats() {
 
   const stats = [
     {
-      icon: <FiClock className="w-6 h-6 text-red-500" />,
+      icon: <FiClock className="w-6 h-6 text-indigo-400" />,
       value: "Nearly 4",
       suffix: " Years",
       label: "Tech Expertise",
       desc: "CDAC Project Engineer since Nov 2022 (completing 4 years in Nov 2026).",
-      glow: "hover:shadow-red-500/10",
+      glow: "hover:shadow-indigo-500/10",
     },
     {
-      icon: <FiLayers className="w-6 h-6 text-amber-500" />,
+      icon: <FiLayers className="w-6 h-6 text-sky-400" />,
       value: "67",
       suffix: "+ Colleges",
       label: "e-SLCMS Deployments",
       desc: "Architected enterprise systems across 2 AIIMS and 65 DMER state medical colleges.",
-      glow: "hover:shadow-amber-500/10",
+      glow: "hover:shadow-sky-500/10",
     },
     {
-      icon: <FiPercent className="w-6 h-6 text-emerald-500" />,
+      icon: <FiPercent className="w-6 h-6 text-emerald-400" />,
       value: "35",
       suffix: "% Improvement",
       label: "Latency Reduction",
@@ -84,7 +84,7 @@ export function Stats() {
       glow: "hover:shadow-emerald-500/10",
     },
     {
-      icon: <FiDatabase className="w-6 h-6 text-blue-500" />,
+      icon: <FiDatabase className="w-6 h-6 text-blue-400" />,
       value: "100",
       suffix: "K+ Records",
       label: "Secure Data Pipelines",
@@ -92,7 +92,7 @@ export function Stats() {
       glow: "hover:shadow-blue-500/10",
     },
     {
-      icon: <FiMessageSquare className="w-6 h-6 text-purple-500" />,
+      icon: <FiMessageSquare className="w-6 h-6 text-purple-400" />,
       value: "5",
       suffix: "K+ Daily Messages",
       label: "Communication Hub",
@@ -107,7 +107,7 @@ export function Stats() {
       className="relative py-24 px-6 bg-zinc-950/40 border-y border-white/5 overflow-hidden"
     >
       {/* Background soft glowing blur */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[300px] bg-red-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[300px] bg-indigo-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center space-y-4 mb-16">

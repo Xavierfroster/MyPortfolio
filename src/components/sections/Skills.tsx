@@ -5,27 +5,27 @@ import { FiCode, FiDatabase, FiShield, FiCpu, FiGrid } from "react-icons/fi";
 
 const skillCategories = [
   {
-    icon: <FiCode className="w-5 h-5 text-red-500" />,
+    icon: <FiCode className="w-5 h-5 text-indigo-400" />,
     title: "Backend & APIs",
     skills: ["Java (Core & EE)", "Spring Boot", "Spring MVC", "RESTful Web Services", "Hibernate / JPA / HQL"],
   },
   {
-    icon: <FiDatabase className="w-5 h-5 text-amber-500" />,
+    icon: <FiDatabase className="w-5 h-5 text-sky-400" />,
     title: "Database Engineering",
     skills: ["MySQL", "PostgreSQL", "PL/SQL", "Native SQL Tuning", "HQL Optimization"],
   },
   {
-    icon: <FiShield className="w-5 h-5 text-emerald-500" />,
+    icon: <FiShield className="w-5 h-5 text-emerald-400" />,
     title: "Security & Auditing",
     skills: ["JWT & JWE Tokenization", "MQAS STH Audit Compliance", "Secure Data Transmission", "Data Cryptography"],
   },
   {
-    icon: <FiCpu className="w-5 h-5 text-blue-500" />,
+    icon: <FiCpu className="w-5 h-5 text-blue-400" />,
     title: "DevOps & Environments",
     skills: ["Docker", "Linux Administration (RHEL)", "Git / SVN Version Control", "Enterprise Shell Automation"],
   },
   {
-    icon: <FiGrid className="w-5 h-5 text-purple-500" />,
+    icon: <FiGrid className="w-5 h-5 text-purple-400" />,
     title: "Frontend & Scripting",
     skills: ["JavaScript (ES6+)", "ReactJS", "Next.js (App Router)", "HTML5 & Tailwind CSS", "Modern Web Layouts"],
   },
