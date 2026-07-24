@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
+import { Stats } from "@/components/sections/Stats";
 import { Journey } from "@/components/sections/Journey";
 import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <div className="relative z-10 bg-background">
         <About />
+        <Stats />
         <Journey />
         <Projects />
         <Skills />

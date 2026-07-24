@@ -40,6 +40,19 @@ export function Hero() {
         className="relative z-10 flex flex-col items-center justify-center space-y-6 text-center px-4"
         style={{ y: textY, opacity }}
       >
+        {/* Subtitle Badge */}
+        <motion.div
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-zinc-900/40 backdrop-blur-md mb-2 cursor-default"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+        >
+          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+          <span className="text-xs font-semibold tracking-[0.2em] text-zinc-300 uppercase">
+            Project Engineer @ C-DAC
+          </span>
+        </motion.div>
+
         <motion.h1 
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter"
           initial={{ opacity: 0, y: 30 }}
@@ -51,13 +64,34 @@ export function Hero() {
         </motion.h1>
         
         <motion.p
-          className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto font-light"
+          className="text-base md:text-lg text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
         >
-          Hi, I am Kumar Dhawale. A Software Engineer specializing in Java, Spring Boot, and building scalable full-stack applications with an emphasis on secure and optimized architecture.
+          Hi, I am Kumar Dhawale. I design, secure, and optimize enterprise-scale web applications. Specializing in Java, Spring Boot, and database performance tuning, with a focus on compliant architecture and Safe-to-Host (STH) security audits.
         </motion.p>
+
+        {/* Call to action buttons */}
+        <motion.div 
+          className="flex flex-row items-center justify-center gap-4 pt-4"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <a 
+            href="#projects" 
+            className="px-6 py-3.5 bg-white text-black font-semibold text-sm rounded-full hover:bg-zinc-200 transition-all duration-300 shadow-md shadow-white/5 active:scale-95"
+          >
+            Selected Projects
+          </a>
+          <a 
+            href="#contact" 
+            className="px-6 py-3.5 border border-zinc-800 text-white font-medium text-sm rounded-full hover:bg-white/5 transition-all duration-300 active:scale-95"
+          >
+            Get In Touch
+          </a>
+        </motion.div>
       </motion.div>
 
       {/* Scroll indicator */}

@@ -14,7 +14,7 @@ export function About() {
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.8, 1], [0, 1, 1, 0]);
 
   return (
-    <section ref={containerRef} className="relative min-h-screen flex items-center justify-center py-32 px-6">
+    <section ref={containerRef} id="about" className="relative min-h-screen flex items-center justify-center py-32 px-6">
       <motion.div 
         className="max-w-4xl mx-auto space-y-12"
         style={{ y, opacity }}

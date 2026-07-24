@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <section className="relative min-h-[80vh] flex flex-col items-center justify-center py-32 px-6 bg-black overflow-hidden">
+    <section id="contact" className="relative min-h-[80vh] flex flex-col items-center justify-center py-32 px-6 bg-black overflow-hidden">
       
       {/* Background radial gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-zinc-800/30 via-black to-black z-0 pointer-events-none" />
